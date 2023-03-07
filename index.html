@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS + TW Dark Toggler </title>
+</head>
+
+<body class="m-0 flex place-items-center min-w-[320px] min-h-screen leading-15 antialiased bg-slate-100 dark:bg-slate-700">
+
+  <button id="theme-toggle" type="button" class="absolute p-2 top-2 right-2 text-gray-500 dark:text-gray-400">
+    <svg id="theme-toggle-light-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+    </svg>
+
+    <svg id="theme-toggle-dark-icon" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+      viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+    </svg>
+  </button>
+
+  <div id="app" class="max-w-7xl my-0 mx-auto text-center">
+
+    <div>
+      <div class="m-6 flex justify-center">
+
+        <a href="https://vitejs.dev" target="_blank">
+          <img src="/vite.svg"
+            class="h-32 p-6 will-change-[filter] transition-[filter] duration-300  hover:drop-shadow-[0_0_35px_rgba(100,108,255,0.67)]"
+            alt="Vite logo" />
+        </a>
+        <a href="https://www.typescriptlang.org" target="_blank">
+          <img src="/src/typescript.svg"
+            class="h-32 p-6 will-change-[filter] transition-[filter] duration-300 hover:drop-shadow-[0_0_35px_rgba(49,120,198,0.67)]"
+            alt="JavaScript logo" />
+        </a>
+        <a href="https://tailwindcss.com" target="_blank">
+          <img src="/tailwindcss-icon.svg"
+            class="h-32 p-6 will-change-[filter] transition-[filter] duration-300 hover:drop-shadow-[0_0_35px_rgba(49,120,198,0.67)]"
+            alt="Tailwind logo" />
+        </a>
+      </div>
+
+      <h1 class="font-semibold text-5xl text-slate-700 dark:text-slate-200">Hello Vite JS Tailwind!</h1>
+      <div class="p-8">
+        <button id="counter" type="button"
+          class="border border-transparent rounded-lg py-4 px-8 transition-[border-color] duration-[250ms] hover:border-[#646cff] text-slate-700 dark:text-slate-200"></button>
+      </div>
+      <p class="dark:text-[#888888]">
+        Click on the Vite logo to learn more
+      </p>
+    </div>
+
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+
+</body>
+
+</html>
